@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tab Baru</title>
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="shortcut icon" href="icon/why-09.ico">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+   </head>
+   <body>
+      <div id="container">
+         <div id="navbar">
+
+         </div>
+         <div id="waktu">
+            <h2></h2>
+            <p></p>
+         </div>
+         <div id="header">
+            <h1>Wahyu Kurniawan</h1>
+         </div>
+         <div id="body">
+            <form action="" method="get" class="cari">
+               <input type="text" name="search" placeholder="Cari apapun disini..">
+               <button type="submit"><img src="icon/search.png" alt=""></button>
+            </form>
+         </div>
+         <div id="footer">
+
+            <!-- modal -->
+            <section class="modal hidden">
+               <form action="">
+                  
+               </form>
+               <div class="flex">
+                  <button class="btn-close">⨉</button>
+               </div>
+               <div>
+                  <h4>Masukkan Shortcut</h4>
+               </div>
+               <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Shortcut...">
+               <input type="text" name="link" id="link" placeholder="Masukkan Link...">
+               <button type="button" class="btn" id="tbh-shortcut">Tambah</button>
+               <!-- <button class="btn" id="">Batal</button> -->
+            </section>
+
+            <div class="overlay hidden"></div>
+            <!-- akhir modal -->
+
+            <!-- seksi shortcut -->
+            <div class="shortcut">
+               <span class="close">×</span>
+               <button class="tambahShortcut" title="tambahShortcut" label="tambahShortcut">
+                  <div class="icon"><img src="icon/plus.png" alt=""></div>
+                  <div class="title">Tambah Shortcut</div>
+               </button>
+            </div>
+            <!-- akhir seksi shortcut -->
+
+         </div>
+      </div>
+      <script src="js/index.js"></script>
+   </body>
+</html>

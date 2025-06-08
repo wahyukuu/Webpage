@@ -1,0 +1,321 @@
+* {
+   margin: 0;
+   padding: 0;
+   /* line-height: 0; */
+   /* box-sizing: border-box; */
+}
+
+body {
+   background-color: rgb(255, 255, 255);
+   justify-content: center;
+   align-items: center;
+   display:flex;
+   height: 100%;
+   width: 100%;
+}
+
+#container {
+   margin: 0;
+   padding: 0;
+   display: inline-flex;
+   flex-direction: column;
+   /* border-color: rgb(160, 219, 219); */
+   /* overflow: auto; */
+}
+
+#navbar {
+   margin: 20px;
+   padding: 30px;
+}
+
+#waktu {
+   margin: 10px;
+   padding: 10px;
+   text-align: center;
+}
+
+#waktu h2 {
+   font-family: 'Ubuntu';
+   font-size: 60px;
+   color: rgb(0, 170, 248);
+   text-shadow: 0 1px 3px rgba(32, 33, 36, 0.28);
+}
+
+#waktu p {
+   margin-top: 5px;
+   padding: 0px;
+   font-family: 'Roboto';
+   font-size: 18px;
+   color: rgb(44, 40, 1);
+   /* text-shadow: 0 1px 1px rgba(32, 33, 36, 0.28); */
+} 
+
+#header {
+   margin: 0px;
+   padding: 10px;
+   font-family: 'Ubuntu';
+   font-size: 24px;
+   text-align: center;
+   color: rgb(1, 37, 1);
+}
+
+#body {
+   margin: 0px;
+   padding: 10px;
+   /* max-width: 600px; */
+}
+
+/* form dengan class cari */
+.cari {
+   display: flex;
+   border: 1px solid #dfe1e5;
+   border-radius: 24px;
+   padding: 10px 15px;
+   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+/* kotak input */
+.cari input[type='text'] {
+   width: 700px;
+   border: none;
+   outline: none;
+   flex-grow: 1;
+}
+.cari input[placeholder] {
+   margin-left: 7px;
+   font-size: 15px;
+   font-family: 'Ubuntu';
+}
+/* tombol dengan icon kaca pembesar */
+.cari button {
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 0;
+}
+
+.cari button img {
+   width: 20px;
+   height: 20px;
+   margin-right: 5px;
+}
+
+#footer {
+   margin: 0px;
+   padding: 5px;
+   max-width: 800px;
+   /* background-color: rgb(179, 206, 206); */
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+}
+
+.shortcut  {
+   height: 120px;
+   width: 120px;
+   border-style: none;
+   background-color: rgb(255, 255, 255);
+   cursor: pointer;
+   align-content: center;
+   display: flex;
+   flex-direction: column;
+   /* secara horizontal */
+   justify-content: center;
+   /* secara vertikal */
+   align-items: center; 
+}
+.shortcut:hover  {
+   background-color: rgb(236, 236, 236);
+}
+
+.button-no-border {
+   border: none;
+}
+
+.shortcutClose {
+   display: 'none';
+}
+
+.close {
+   height: 24px;
+   width: 24px;
+   font-size: 24px;
+   font-weight: bold;
+   color: white;
+   margin-left: 105px;
+   cursor: pointer;
+}
+.close:hover {
+   color: red;
+   font-weight: bold;
+}
+
+.shortcutNew  {
+   height: 120px;
+   width: 120px;
+   border-style: none;
+   background-color: rgb(255, 255, 255);
+   cursor: pointer;
+   align-content: center;
+   display: flex;
+   flex-direction: column;
+   /* secara horizontal */
+   justify-content: center;
+   /* secara vertikal */
+   align-items: center; 
+}
+.shortcutNew:hover  {
+   background-color: rgb(236, 236, 236);
+}
+
+.shortcutNewClose {
+   display: none;
+}
+
+.closeNew {
+   height: 24px;
+   width: 24px;
+   font-size: 24px;
+   font-weight: bold;
+   color: white;
+   margin-left: 105px;
+   cursor: pointer;
+}
+.closeNew:hover {
+   color: red;
+   font-weight: bold;
+}
+
+.tambahShortcut  {
+   height: 120px;
+   width: 120px;
+   border-style: none;
+   background-color: transparent;
+   cursor: pointer;
+   align-content: center;
+   display: flex;
+   flex-direction: column;
+   /* secara horizontal */
+   justify-content: center;
+   /* secara vertikal */
+   align-items: center; 
+}
+
+.shortcutBaru  {
+   height: 120px;
+   width: 120px;
+   border-style: none;
+   background-color: transparent;
+   cursor: pointer;
+   align-content: center;
+   display: flex;
+   flex-direction: column;
+   /* secara horizontal */
+   justify-content: center;
+   /* secara vertikal */
+   align-items: center; 
+}
+
+.icon {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #e2e0e0;
+}
+
+.title {
+   padding-top: 12px;
+   font-family: 'Ubuntu';
+   font-size: 14px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 300px;
+  padding: 1.3rem;
+  min-height: 200px;
+  position: absolute;
+  top: 20%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-family: 'Ubuntu';
+  z-index: 2;
+}
+
+.hidden {
+   display: none;
+}
+
+.modal .flex {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.modal input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-family: 'Ubuntu';
+  margin-top: 2px;
+}
+
+.modal p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0 0.2rem;
+  font-family: 'Ubuntu';
+}
+
+section button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-family: 'Ubuntu';
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.btn-open {
+  position: absolute;
+  bottom: 150px;
+}
+
+.btn-close {
+  transform: translate(285px, -10px);
+  padding: 0.2rem 0.35rem;
+  background: #eee;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
